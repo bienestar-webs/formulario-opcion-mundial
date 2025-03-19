@@ -1,0 +1,215 @@
+
+
+/* Estilos generales */
+body {
+    background-color: #076ca1; /* Verde oliva claro */
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Contenedor principal */
+.container {
+    max-width: 800px;
+    margin: 0 auto; /* Centrar en la pantalla */
+    padding: 10px;
+}
+
+
+
+/* Asegurar que ambos containers tengan las mismas dimensiones y mÃ¡rgenes */
+.container.mt-4, .container.mt-5 {
+    max-width: 800px;
+    margin-top: 40px; /* Igualar el espaciado */
+}
+
+
+
+/* Encabezado */
+.header-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+   border: solid 2px green; /* NUEVO BORDE VERDE AGREGADO PARA LA PORTADA.  */
+   border-radius: 12px; /* NUEVO BORDE REDONDEADO AGREGADO PARA LA PORTADA.  */
+   padding: 10px; /* NUEVO ESPACIADO INTERNO AGREGADO PARA LA PORTADA.  */
+    width: 100%; /* Asegurar que tome todo el ancho */
+}
+
+
+
+.header-box {
+    background: white;
+    border: 3px solid #076ca1; /* Verde oliva oscuro */
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    width: 80%;
+}
+
+
+
+/* Imagen del encabezado */
+.header-container img {
+    width: 100%; /* Ajustar al ancho del contenedor */
+    max-width: 800px; /* Igual al ancho del container */
+    height: auto;
+    border-radius: 10px; /* Redondear bordes */
+    display: block;
+    margin: 0 auto; /* Centrar la imagen */
+}
+
+
+
+
+
+.form-control {
+  
+    border: solid 1px #076ca1; /* NUEVO CODIGO DE BORDE PARA QUE LOS INPUT SEAN MAS VISIBLES  */
+    
+  }
+
+  .form-select {
+  
+    border: solid 1px #076ca1; /* NUEVO CODIGO DE BORDE PARA QUE LOS INPUT SEAN MAS VISIBLES  */
+    
+  }
+
+
+
+
+
+
+/* Estilo de tarjetas */
+.card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    padding: 20px; /* Asegurar espaciado interno */
+}
+
+
+
+/* Estilos de tI­tulos */
+
+h1 {
+
+
+    color: #076ca1; /* Verde oliva */
+    text-align: center;
+    font-size: 33px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+
+
+/* Estilos de tÃ­tulos */
+h2 {
+
+    color: #076ca1; /* Verde oliva */
+    font-family: 'Times New Roman', Times, serif;
+    
+}
+
+
+
+
+
+
+.form-check input {
+  
+    border: solid 2px #076ca1; /* NUEVO CODIGO DE BORDE PARA QUE LOS RADIOSS SEAN MAS VISIBLES  */
+    
+  }
+
+
+
+
+
+
+/* Botones */
+.btn-primary {
+    background-color:#076ca1;
+    border-color: #076ca1;
+    padding: 10px 20px; /* Mejor tamaÃ±o en mÃ³viles */
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+}
+
+
+
+.btn-primary:hover {
+    background-color: #076ca1; /* Verde mÃ¡s oscuro al pasar el mouse */
+    border-color: #076ca1;
+}
+
+
+
+
+
+
+
+/* Estilos responsivos  */
+
+
+
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+        padding: 10px;
+    }
+
+    .header-box {
+        width: 90%;
+        padding: 8px;
+    }
+
+    .card {
+        padding: 15px;
+    }
+
+
+  h1 {
+
+    font-size: 25px; /* Reducir tamaÃ±o en pantallas pequeÃ±as */
+    margin-bottom: 10px;
+
+  }
+
+
+    h2 {
+        font-size: 18px; /* Reducir tamaÃ±o en pantallas pequeÃ±as */
+    }
+
+    .btn-primary {
+        width: 100%; /* BotÃ³n ocupa todo el ancho */
+        font-size: 14px;
+        padding: 12px;
+    }
+}
+
+
+
+
+/* Ajustes adicionales para iPhone mÃ¡s pequeÃ±os */
+
+@media (max-width: 480px) {
+    .header-box {
+        width: 95%;
+        padding: 5px;
+    }
+
+    h2 {
+        font-size: 16px;
+    }
+
+    .btn-primary {
+        font-size: 14px;
+        padding: 10px;
+    }
+}

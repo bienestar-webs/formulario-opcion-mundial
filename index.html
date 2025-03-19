@@ -1,0 +1,186 @@
+
+
+<!DOCTYPE html>
+<html lang="es-co">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Inscripción</title>
+    <link rel="shortcut icon" href="https://fundacionopcionmundial.org/wp-content/uploads/2024/01/LOGO-OPCION-MUNDIAL-04-1-300x168.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="stylesheet" href="form-opcion-mundial.css">
+</head>
+<body>
+    <div class="container mt-4">        
+        <div class="card p-4">
+            <div class="header-container text-center">
+                <img src="banner-formulario-opcion-mundial.png" alt="Fundación Opción Mundial">
+            </div><br><br>
+            <h1 class="text-center">FORMULARIO DE INSCRIPCIÓN FUNDACIÓN OPCIÓN MUNDIAL</h1><br>
+            <p>Este formulario permitirá a la persona que lo diligencie estar vinculada en la Fundación, haciéndola beneficiaria del convenio académico.</p><br>
+            <p class="text-danger">* Indica que la pregunta es obligatoria</p>
+        </div>
+    </div>
+
+
+
+    <div class="container mt-5">
+
+        <div class="card shadow p-4">
+            <h2 class="text-center mb-4">Datos Personales</h2>
+
+
+
+           <form id="formulario" action="https://formsubmit.co/jampierdev@gmail.com" method="POST">
+
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <label class="form-label">Nombre y Apellidos <span class="text-danger">*</span></label>
+                        <input type="text" id="nombre" name="Nombre y Apellidos" class="form-control" required autocomplete="off">
+                       
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label class="form-label">Número de Documento <span class="text-danger">*</span></label>
+                        <input type="number" id="numeroDocumento" name="Numero De Documento" class="form-control" required autocomplete="off">
+                    </div>
+                </div>                 
+
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <label class="form-label">Donde vives <span class="text-danger">*</span></label>
+                        <input type="text" id="direccion" name="La Direccion" class="form-control" required autocomplete="off">
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label class="form-label">Teléfono / Celular <span class="text-danger">*</span></label>
+                        <input type="number" id="telefono" name="El Telefono" class="form-control" required autocomplete="off">
+                    </div>
+                </div>                           
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <label class="form-label">Sisbén <span class="text-danger">*</span></label>
+                        <select id="sisben" name="¿Tiene Sisben?" class="form-select" required>
+                            <option value="" disabled selected>Seleccionar...</option>
+                            <option value="si">Sí</option>
+                            <option value="no">No</option>                            
+                        </select>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label class="form-label">Ingrese su edad <span class="text-danger">*</span></label>
+                        <input type="number" id="edad" name="Su Edad" class="form-control" required min="1" max="120">
+
+                    </div>
+                </div>
+
+
+
+
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <label class="form-label">Hasta qué grado llegó</label>
+                        <input type="text" id="hastaQueGrado" name="¿Hasta Que Grado Llegó?" class="form-control" required>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                    <label class="form-label">Selecciona un documento PDF:</label>
+                    <input type="file" name="Documento Subido" accept="application/pdf" required class="form-control">
+                   
+                    </div>
+                    
+                </div>
+
+
+                <h2 class="text-center mb-4"> Programa subdio educactivo del aspirante </h2>
+
+
+
+                <div class="row">
+                    <!-- Porcentaje de beca solicitado -->
+                    <div class="col-md-6 mb-3">
+                        <label class="form-label">Porcentaje de beca solicitado <span class="text-danger">*</span></label>
+                        <div class="d-flex">
+                            <div class="form-check me-3">
+                                <input class="form-check-input" type="radio" name="porcentajeBeca" id="beca50" value="50" required>
+                                <label class="form-check-label" for="beca50">50%</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="porcentajeBeca" id="beca40" value="40">
+                                <label class="form-check-label" for="beca40">40%</label>
+                            </div>
+                        </div>
+                    </div>               
+                
+
+
+
+                    <!-- Programa técnico -->
+                    <div class="col-md-6 mb-3">
+                        <label class="form-label">Programa técnico <span class="text-danger">*</span></label>
+                        <select id="programaEstudio" name="Programa De Estudio" class="form-select" required>
+                            <option value="" disabled selected>Seleccionar...</option>
+                            <option value="Ingeniería">Ingeniería</option>
+                            <option value="Medicina">Medicina</option>
+                            <option value="Derecho">Derecho</option>
+                            <option value="Administración">Administración</option>
+                            <option value="Psicología">Psicología</option>
+                        </select>
+                    </div>  
+                </div>         
+
+
+
+                <div class="row">
+                   <!-- Persona que lo postula -->
+                    <div class="col-md-6 mb-3">
+                        <label class="form-label">Horarios disponibles <span class="text-danger">*</span></label>
+                        <select id="horariosDisponibles" name="Horarios Disponibles" class="form-select" required>
+                            <option value="" disabled selected>Seleccionar...</option>
+                            <option value="4:15 PM - 6:30 PM - Presencial">4:15 PM - 6:30 PM - Presencial</option>
+                            <option value="7:00 PM - 9:00 PM - Nocturna">7:00 PM - 9:00 PM - Nocturna</option>
+                            <option value="6:45 AM - 12:15 PM - Semipresencial-Domingo">6:45 AM - 12:15 PM - Semipresencial-Domingo</option>
+                        </select>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label class="form-label">Persona que lo postula <span class="text-danger">*</span></label>
+                        <select id="personaPostula" name="Persona Que lo Postula" class="form-select" required>
+                            <option value="" disabled selected>Seleccionar...</option>
+                            <option value="Fundación">Fundación</option>
+                            <option value="Junta de Acción Comunal">Junta de Acción Comunal</option>
+                            <option value="Iglesia">Iglesia</option>
+                            <option value="Líder">Líder</option>
+                            <option value="AJOSAC">AJOSAC</option>
+                            <option value="Entidad Pública">Entidad Pública</option>
+                        </select>
+                    </div>
+                </div>
+
+
+
+                <div class="row"> 
+                
+                    <div class="col-md-6 mb-3">
+                        <label class="form-label">Nombre de quien lo postula <span class="text-danger">*</span></label>
+                        <input type="text" id="nombrePostula" name="nombre De Quien Postula" class="form-control" required autocomplete="off">
+                    </div>
+                
+                    <div class="col-md-6 mb-3">
+                        <label class="form-label">Teléfono / Celular de quien lo postula <span class="text-danger">*</span></label>
+                        <input type="number" id="telefonoPostula" name="telefono De Quien Postula" class="form-control" required autocomplete="off">
+                    </div>
+                
+                    <div class="col-md-6 mb-3">
+                        <label class="form-label">Correo Electrónico de quien lo postula <span class="text-danger">*</span></label>
+                        <input type="email" id="correoPostula" name="correo De Quien lo Postula" class="form-control" required autocomplete="off">
+                    </div>
+                </div>
+                <div class="text-center">
+                    <button type="submit" class="btn btn-primary w-50">Enviar</button>
+                </div>
+            </form>
+        </div>
+    </div>    
+
+   
+    <script src="form-opcion-mundial.css"></script>
+
+</body>
+</html>
